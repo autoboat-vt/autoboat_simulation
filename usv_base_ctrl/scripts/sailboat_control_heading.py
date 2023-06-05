@@ -18,6 +18,7 @@ data = {
     'state': None,
     'map_bounds': None,
     'wind': None,
+    'is_running': False,
 }
 subscribtions = {}
 
@@ -135,14 +136,17 @@ def is_ready():
 
 def pause_simulation():
     rospy.ServiceProxy('/gazebo/pause_physics', Empty)()
+    data['is_running'] = False
 
 def resume_simulation():
     rospy.ServiceProxy('/gazebo/unpause_physics', Empty)()
+    data['is_running'] = True
 
 def reset_world():
     rospy.ServiceProxy('/gazebo/pause_physics', Empty)()
     rospy.ServiceProxy('/gazebo/reset_world', Empty)()
     rospy.ServiceProxy('/gazebo/unpause_physics', Empty)()
+    data['is_running'] = True
 
 def reset_simulation():
     # reset simulation
@@ -191,8 +195,11 @@ def run_worker():
                     data['wind'] = msg['reset']['wind']
                     rate = rospy.Rate(msg['reset']['freq'])
                     reset_simulation()
+                    pause_simulation()
                     send_msg({'obs': get_sensors(), 'done': False, 'info': get_init_info()})
                 elif 'action' in msg:
+                    if not data['is_running']:
+                        resume_simulation()
                     instr = convert_act_to_instr(msg['action'])
                     pub_rudder.publish(instr)
                     rate.sleep()
