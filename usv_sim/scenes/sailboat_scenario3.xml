@@ -70,8 +70,8 @@
       <joint> 0 </joint>
     </jointValues>
      <position>
-      <x> 250</x>
-      <y> 75 </y>
+      <x> 0</x>
+      <y> 0 </y>
       <z> 1 </z>
     </position>
     <orientation>
@@ -87,8 +87,8 @@
     <name>buoy1</name>
     <file>urdf/buoy_uwsim.urdf</file>
     <position>
-      <x> 250</x>
-      <y> 100 </y>
+      <x> 0</x>
+      <y> -100 </y>
       <z> 1 </z>
     </position>
     <orientation>
@@ -102,8 +102,8 @@
     <name>buoy2</name>
     <file>urdf/buoy_uwsim.urdf</file>
     <position>
-      <x> 300</x>
-      <y> 100 </y>
+      <x> 200</x>
+      <y> -100 </y>
       <z> 1 </z>
     </position>
     <orientation>
@@ -118,8 +118,8 @@
     <file>urdf/buoy_uwsim.urdf</file>
 
     <position>
-      <x> 250</x>
-      <y> 50 </y>
+      <x> 200</x>
+      <y> 100 </y>
       <z> 1 </z>
     </position>
     <orientation>
@@ -134,8 +134,8 @@
     <file>urdf/buoy_uwsim.urdf</file>
 
     <position>
-      <x> 300</x>
-      <y> 50 </y>
+      <x> 0</x>
+      <y> 100 </y>
       <z> 1 </z>
     </position>
     <orientation>
@@ -146,7 +146,7 @@
   </vehicle>
 
 
-	<object>
+	<!-- <object>
     <name>terrain</name>
     <file>terrain/diluvio5/novo4.obj</file>
     <position>
@@ -159,7 +159,7 @@
       <p>0 </p>
       <y>0 </y>
     </orientation>
-  </object>
+  </object> -->
 
   <rosInterfaces>   
 
