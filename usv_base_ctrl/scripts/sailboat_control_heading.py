@@ -11,13 +11,21 @@ from sensor_msgs.msg import JointState
 from std_msgs.msg import Header
 from std_srvs.srv import Empty
 from gazebo_msgs.msg import ModelStates
-from wind_current.srv import GetSpeed, GetSpeedResponse
+from wind_current.srv import (
+    GetSpeed as WindGetSpeed,
+    GetSpeedResponse as WindGetSpeedResponse
+)
+from water_current.srv import (
+    GetSpeed as WaterGetSpeed,
+    GetSpeedResponse as WaterGetSpeedResponse
+)
 
 data = {
     'pose': None,
     'state': None,
     'map_bounds': None,
     'wind': None,
+    'water': None,
 }
 subscribtions = {}
 
@@ -89,6 +97,7 @@ def get_sensors():
         'dt_theta_sail': data['state'].velocity[1],
 
         'wind': {'x': data['wind']['x'], 'y': data['wind']['y']},
+        'water': {'x': data['water']['x'], 'y': data['water']['y']},
     }
 
 def get_info():
@@ -126,7 +135,12 @@ def create_zmq_socket():
 def handle_wind_current(req):
     # for now we use a global wind
     assert data['wind'] is not None, 'wind is not initialized'
-    return GetSpeedResponse(data['wind']['x'], data['wind']['y'], 0)
+    return WindGetSpeedResponse(data['wind']['x'], data['wind']['y'], 0)
+
+def handle_water_current(req):
+    # for now we use a global wind
+    assert data['water'] is not None, 'water is not initialized'
+    return WaterGetSpeedResponse(data['water']['x'], data['water']['y'])
 
 def is_ready():
     return data['pose'] is not None \
@@ -173,7 +187,8 @@ def run_worker():
     subscribtions['init_states'] = rospy.Subscriber('/gazebo/model_states', ModelStates, init_states_cb)
 
     # services
-    rospy.Service('/windCurrent', GetSpeed, handle_wind_current)
+    rospy.Service('/windCurrent', WindGetSpeed, handle_wind_current)
+    rospy.Service('/waterCurrent', WaterGetSpeed, handle_water_current)
 
     # prepare services
     rospy.wait_for_service('/gazebo/unpause_physics')
@@ -189,13 +204,16 @@ def run_worker():
             try:
                 if 'reset' in msg:
                     data['wind'] = msg['reset']['wind']
+                    data['water'] = msg['reset']['water']
                     rate = rospy.Rate(msg['reset']['freq'])
                     reset_simulation()
                     pause_simulation()
                     send_msg({'obs': get_sensors(), 'done': False, 'info': get_init_info()})
                 elif 'action' in msg:
-                    resume_simulation()
+                    data['wind'] = msg['action']['wind']
+                    data['water'] = msg['action']['water']
                     instr = convert_act_to_instr(msg['action'])
+                    resume_simulation()
                     pub_rudder.publish(instr)
                     rate.sleep()
                     send_msg({'obs': get_sensors(), 'done': False, 'info': get_info()})

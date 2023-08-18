@@ -33,7 +33,7 @@
             <arg name="spawnGazebo" value="$(arg spawnGazebo)"/>
             <arg name="namespace" value="$(arg namespace)"/>
             <arg name="windType" value="local"/>
-            <arg name="waterType" value="global"/>
+            <arg name="waterType" value="local"/>
         </include>
 			
         <!-- recording experiment -->
