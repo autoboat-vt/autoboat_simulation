@@ -24,11 +24,9 @@
 		<surface>0 0 0</surface>
 		<updateRate>0.02</updateRate>
 	</plugin>
-          
 
-  <physics name='default_physics' default='0' type='ode'>
+  <physics name='default_physics' default='0' type='PHYSICS_TYPE'>
     <max_step_size>MAX_STEP_SIZE</max_step_size>
-    <real_time_update_rate>REAL_TIME_UPDATE_RATE</real_time_update_rate>
   </physics>
 
   </world>
