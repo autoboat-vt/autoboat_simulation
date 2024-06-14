@@ -1,0 +1,1 @@
+docker buildx build --build-arg max_step_size=0.001 --build-arg physics_type=ode --tag lucasmrdt/sailboat-sim-lsa-gym:mss1-ode --cache-from type=registry,ref=lucasmrdt/sailboat-sim-lsa-gym .
