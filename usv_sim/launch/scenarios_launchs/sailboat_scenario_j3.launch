@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-	<arg name="gui" default="false"/>
+	<arg name="gui" default="true"/>
 	<arg name="parse" default="false"/>
 	<arg name="rec" default="false"/>
 

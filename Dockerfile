@@ -68,18 +68,24 @@ ARG max_step_size=0.001
 ARG physics_type=ode
 # CACHED -------------------------------------------------------------------------------------------------------------------
 
+RUN sudo apt-get install mate-desktop-environment -y 
+RUN sudo apt-get install ubuntu-mate-themes -y
+ENV DISPLAY=host.docker.internal:0.0
+# RUN mate-session
+
+# RUN sudo apt-get install -y x11vnc xvfb 
+# RUN mkdir ~/.vnc
+# RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
+# COPY entrypoint.sh /entrypoint.sh
+# CMD x11vnc -forever -usepw -create & /bin/bash
+
+
+
 
 RUN rm -rf ~/catkin_ws/src/usv_sim_lsa \
     && mkdir ~/catkin_ws/src/usv_sim_lsa
 
 COPY . ~/catkin_ws/src/usv_sim_lsa/
-
-# RUN cd ~/catkin_ws \
-#     && rm -rf src/usv_sim_lsa \
-#     && cd usv_sim_lsa \
-#     && git submodule init \
-#     && git submodule update
-
 
 RUN cd ~/catkin_ws/ \
     && source /opt/ros/kinetic/setup.bash \
@@ -101,4 +107,5 @@ RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
 CMD source /opt/ros/kinetic/setup.bash \
     && source ~/catkin_ws/install_isolated/setup.bash \
     && service ssh start \
-    && roslaunch usv_sim sailboat_scenario3.launch parse:=false
+    && roslaunch usv_sim sailboat_scenario3.launch parse:=false \
+    & mate-session
