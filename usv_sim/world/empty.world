@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <sdf version="1.4">
   <world name="underwater">
-    <include>
+    <!-- <include>
       <uri>model://sun</uri>
-    </include>
+    </include> -->
 
     <wind>
       <linear_velocity>11 11 0</linear_velocity> <!-- Wind linear velocity -->
@@ -27,8 +27,8 @@
 
   <physics name='default_physics' default='0' type='PHYSICS_TYPE'>
     <!-- <max_step_size>MAX_STEP_SIZE</max_step_size> -->
-    <max_step_size>0.003</max_step_size>
-    <real_time_update_rate>10000</real_time_update_rate>
+    <max_step_size>0.005</max_step_size>
+    <real_time_update_rate>100000</real_time_update_rate>
   </physics>
 
   </world>

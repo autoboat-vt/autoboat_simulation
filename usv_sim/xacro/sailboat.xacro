@@ -19,12 +19,12 @@
 		    	<origin rpy="0 0 0" xyz="-0.3 0 0.4"/>
 			<mass value="1" />
 			<inertia
-			  ixx="47080"
+			  ixx="470.80"
 			  ixy="0.0"
-			  iyy="52080"
+			  iyy="520.80"
 			  ixz="0.0"
 			  iyz="0.0"
-			  izz="5000.8"/>
+			  izz="500"/>
 		</inertial>
 
 	    <collision name="collision">
@@ -51,7 +51,7 @@
         <origin rpy="0 0 0" xyz="0.2 0 0.1"/>
         <dynamics damping="1.0"/>
         <axis xyz="0 0 1"/>
-        <limit effort="1000000" velocity="2" lower="-${PI/2}" upper="${PI/2}" />
+        <limit effort="1000" velocity="2" lower="-${PI/2}" upper="${PI/2}" />
     </joint>
 
     <link name="keel">

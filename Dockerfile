@@ -68,44 +68,42 @@ ARG max_step_size=0.001
 ARG physics_type=ode
 # CACHED -------------------------------------------------------------------------------------------------------------------
 
+    
 RUN sudo apt-get install mate-desktop-environment -y 
 RUN sudo apt-get install ubuntu-mate-themes -y
 ENV DISPLAY=host.docker.internal:0.0
-# RUN mate-session
 
-# RUN sudo apt-get install -y x11vnc xvfb 
-# RUN mkdir ~/.vnc
-# RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
-# COPY entrypoint.sh /entrypoint.sh
-# CMD x11vnc -forever -usepw -create & /bin/bash
+RUN rm -rf /root/catkin_ws/src/usv_sim_lsa \
+    && mkdir /root/catkin_ws/src/usv_sim_lsa
 
+COPY . /root/catkin_ws/src/usv_sim_lsa/
 
+# RUN cd /root/catkin_ws \
+#     && rm -rf install_isolated build_isolated devel_isolated
 
+RUN source /opt/ros/kinetic/setup.bash \
+    && cd /root/catkin_ws \
+    && catkin_make_isolated --install -q --pkg usv_sim
 
-RUN rm -rf ~/catkin_ws/src/usv_sim_lsa \
-    && mkdir ~/catkin_ws/src/usv_sim_lsa
-
-COPY . ~/catkin_ws/src/usv_sim_lsa/
-
-RUN cd ~/catkin_ws/ \
-    && source /opt/ros/kinetic/setup.bash \
-    && catkin_make_isolated --install \
-    && source install_isolated/setup.bash
+# RUN cd ~/catkin_ws/ \
+#     && source /opt/ros/kinetic/setup.bash \
+#     && catkin_make_isolated --install
+#     && source install_isolated/setup.bash
 
 
-RUN cd ~/catkin_ws/install_isolated/share/usv_sim \
-    && sed -i "s/MAX_STEP_SIZE/${max_step_size}/g" world/empty.world \
-    && sed -i "s/PHYSICS_TYPE/${physics_type}/g" world/empty.world \
-    && cp config/sailboat.${max_step_size}.yaml config/sailboat.yaml
+# RUN cd ~/catkin_ws/install_isolated/share/usv_sim \
+#     && sed -i "s/MAX_STEP_SIZE/${max_step_size}/g" world/empty.world \
+#     && sed -i "s/PHYSICS_TYPE/${physics_type}/g" world/empty.world \
+#     && cp config/sailboat.${max_step_size}.yaml config/sailboat.yaml
 
 WORKDIR /root/catkin_ws/
 
 RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
     && echo "service ssh start" >> ~/.bashrc \
-    && echo "source ~/catkin_ws/install_isolated/setup.bash" >> ~/.bashrc
+    && echo "source /root/catkin_ws/install_isolated/setup.bash" >> ~/.bashrc
 
 CMD source /opt/ros/kinetic/setup.bash \
-    && source ~/catkin_ws/install_isolated/setup.bash \
+    && source /root/catkin_ws/install_isolated/setup.bash \
     && service ssh start \
     && roslaunch usv_sim sailboat_scenario3.launch parse:=false \
     & mate-session
