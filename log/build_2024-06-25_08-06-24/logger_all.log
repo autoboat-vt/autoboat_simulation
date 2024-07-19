@@ -1,0 +1,688 @@
+[0.132s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.132s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f7c59e8e290>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7c59fda9e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7c59fda9e0>>, mixin_verb=('build',))
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.223s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/animated/Projects/SailbotSimulation'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(freefloating_gazebo_resources/freefloating_gazebo) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'freefloating_gazebo_resources/freefloating_gazebo' with type 'ros.catkin' and name 'freefloating_gazebo'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(output/videos) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(usv_base_ctrl) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_base_ctrl' with type 'ros.catkin' and name 'usv_base_ctrl'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(usv_dynamics/foil_dynamics_plugin) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_dynamics/foil_dynamics_plugin' with type 'ros.catkin' and name 'foil_dynamics_plugin'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'ros'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'cmake'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'python'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extensions ['python_setup_py']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/water_current) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_env_disturb/water_current' with type 'ros.catkin' and name 'water_current'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(usv_env_disturb/wind_current) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_env_disturb/wind_current' with type 'ros.catkin' and name 'wind_current'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(usv_metrics) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_metrics' with type 'ros.catkin' and name 'usv_metrics'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(usv_navigation) by extension 'ros'
+[0.250s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_navigation' with type 'ros.catkin' and name 'usv_navigation'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim) by extension 'ros'
+[0.251s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_sim' with type 'ros.catkin' and name 'usv_sim'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(usv_sim_rviz) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_sim_rviz' with type 'ros.catkin' and name 'usv_sim_rviz'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(usv_tf) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'usv_tf' with type 'ros.catkin' and name 'usv_tf'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources) by extension 'python_setup_py'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'ros'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extensions ['cmake', 'python']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'cmake'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'python'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extensions ['python_setup_py']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation) by extension 'python_setup_py'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_sensor_msgs) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/underwater_simulation/underwater_sensor_msgs' with type 'ros.catkin' and name 'underwater_sensor_msgs'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/underwater_vehicle_dynamics) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/underwater_simulation/underwater_vehicle_dynamics' with type 'ros.catkin' and name 'underwater_vehicle_dynamics'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/underwater_simulation/uwsim) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/underwater_simulation/uwsim' with type 'ros.catkin' and name 'uwsim'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_bullet) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/uwsim_bullet' with type 'ros.cmake' and name 'uwsim_bullet'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgbullet) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/uwsim_osgbullet' with type 'ros.cmake' and name 'uwsim_osgbullet'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgocean) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/uwsim_osgocean' with type 'ros.cmake' and name 'uwsim_osgocean'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/uwsim_osgworks) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/uwsim_osgworks' with type 'ros.cmake' and name 'uwsim_osgworks'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_interactive_markers) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/visualization_osg/osg_interactive_markers' with type 'ros.catkin' and name 'osg_interactive_markers'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_markers) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/visualization_osg/osg_markers' with type 'ros.catkin' and name 'osg_markers'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/osg_utils) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/visualization_osg/osg_utils' with type 'ros.catkin' and name 'osg_utils'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(uwsim_resources/visualization_osg/visualization_osg) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'uwsim_resources/visualization_osg/visualization_osg' with type 'ros.catkin' and name 'visualization_osg'
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.297s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/animated/Projects/Sailbot/install
+[0.298s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 187 installed packages in /opt/ros/humble
+[0.298s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'osg_markers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'osg_markers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/osg_markers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/osg_markers', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_markers', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'osg_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'osg_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/osg_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/osg_utils', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_utils', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_sensor_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'underwater_sensor_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/underwater_sensor_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/underwater_sensor_msgs', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_sensor_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'underwater_vehicle_dynamics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'underwater_vehicle_dynamics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/underwater_vehicle_dynamics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/underwater_vehicle_dynamics', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_vehicle_dynamics', 'symlink_install': False, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'cmake_clean_cache' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_base_ctrl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'usv_base_ctrl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/usv_base_ctrl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/usv_base_ctrl', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_base_ctrl', 'symlink_install': False, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_metrics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'usv_metrics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/usv_metrics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/usv_metrics', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_metrics', 'symlink_install': False, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'usv_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/usv_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/usv_navigation', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'cmake_target' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.315s] DEBUG:colcon.colcon_core.verb:Building package 'usv_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/usv_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/usv_sim', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_sim', 'symlink_install': False, 'test_result_base': None}
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'cmake_target' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'cmake_clean_first' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'cmake_force_configure' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'ament_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_sim_rviz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.315s] DEBUG:colcon.colcon_core.verb:Building package 'usv_sim_rviz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/usv_sim_rviz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/usv_sim_rviz', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_sim_rviz', 'symlink_install': False, 'test_result_base': None}
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'cmake_target' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'cmake_clean_first' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'cmake_force_configure' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'ament_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'usv_tf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'usv_tf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/usv_tf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/usv_tf', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_tf', 'symlink_install': False, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_bullet' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'uwsim_bullet' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/uwsim_bullet', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/uwsim_bullet', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_bullet', 'symlink_install': False, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgocean' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'uwsim_osgocean' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/uwsim_osgocean', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/uwsim_osgocean', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgocean', 'symlink_install': False, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgworks' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'uwsim_osgworks' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/uwsim_osgworks', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/uwsim_osgworks', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgworks', 'symlink_install': False, 'test_result_base': None}
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'water_current' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'water_current' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/water_current', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/water_current', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_env_disturb/water_current', 'symlink_install': False, 'test_result_base': None}
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'wind_current' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'wind_current' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/wind_current', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/wind_current', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_env_disturb/wind_current', 'symlink_install': False, 'test_result_base': None}
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'foil_dynamics_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'foil_dynamics_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/foil_dynamics_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/foil_dynamics_plugin', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/usv_dynamics/foil_dynamics_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'freefloating_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'freefloating_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/freefloating_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/freefloating_gazebo', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/freefloating_gazebo_resources/freefloating_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'osg_interactive_markers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'osg_interactive_markers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/osg_interactive_markers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/osg_interactive_markers', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_interactive_markers', 'symlink_install': False, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim_osgbullet' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'uwsim_osgbullet' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/uwsim_osgbullet', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/uwsim_osgbullet', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgbullet', 'symlink_install': False, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'uwsim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'uwsim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/uwsim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/uwsim', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/uwsim', 'symlink_install': False, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'visualization_osg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'visualization_osg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/animated/Projects/SailbotSimulation/build/visualization_osg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/animated/Projects/SailbotSimulation/install/visualization_osg', 'merge_install': False, 'path': '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/visualization_osg', 'symlink_install': False, 'test_result_base': None}
+[0.319s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.320s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_markers' with build type 'catkin'
+[0.320s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_markers'
+[0.323s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.325s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_utils' with build type 'catkin'
+[0.325s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_utils'
+[0.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.328s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_bullet' with build type 'cmake'
+[0.328s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_bullet'
+[0.328s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.328s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.331s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgworks' with build type 'cmake'
+[0.331s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgworks'
+[0.331s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_env_disturb/water_current' with build type 'catkin'
+[0.334s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_env_disturb/water_current'
+[0.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.337s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_env_disturb/wind_current' with build type 'catkin'
+[0.338s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_env_disturb/wind_current'
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_sensor_msgs' with build type 'catkin'
+[0.340s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_sensor_msgs'
+[0.341s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.341s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.343s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgocean' with build type 'cmake'
+[0.343s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgocean'
+[0.343s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.343s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_vehicle_dynamics' with build type 'catkin'
+[0.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_vehicle_dynamics'
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.348s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_base_ctrl' with build type 'catkin'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_base_ctrl'
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.351s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_metrics' with build type 'catkin'
+[0.352s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_metrics'
+[0.352s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.352s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_navigation' with build type 'catkin'
+[0.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_navigation'
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.357s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_sim' with build type 'catkin'
+[0.357s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_sim'
+[0.357s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.359s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_sim_rviz' with build type 'catkin'
+[0.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_sim_rviz'
+[0.360s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.362s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/animated/Projects/SailbotSimulation/usv_tf' with build type 'catkin'
+[0.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/animated/Projects/SailbotSimulation/usv_tf'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/osg_markers': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_markers -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/osg_markers
+[0.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/osg_utils': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/visualization_osg/osg_utils -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/osg_utils
+[0.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/uwsim_bullet': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/animated/Projects/Sailbot/install/wind_sensor:/home/animated/Projects/Sailbot/install/simulation:/home/animated/Projects/Sailbot/install/rc:/home/animated/Projects/Sailbot/install/ntrip_client:/home/animated/Projects/Sailbot/install/nn:/home/animated/Projects/Sailbot/install/mcu:/home/animated/Projects/Sailbot/install/gps:/home/animated/Projects/Sailbot/install/compass:/home/animated/Projects/Sailbot/install/autopilot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_bullet -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/uwsim_bullet
+[0.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/uwsim_osgworks': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/animated/Projects/Sailbot/install/wind_sensor:/home/animated/Projects/Sailbot/install/simulation:/home/animated/Projects/Sailbot/install/rc:/home/animated/Projects/Sailbot/install/ntrip_client:/home/animated/Projects/Sailbot/install/nn:/home/animated/Projects/Sailbot/install/mcu:/home/animated/Projects/Sailbot/install/gps:/home/animated/Projects/Sailbot/install/compass:/home/animated/Projects/Sailbot/install/autopilot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgworks -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/uwsim_osgworks
+[0.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/water_current': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_env_disturb/water_current -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/water_current
+[0.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/wind_current': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_env_disturb/wind_current -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/wind_current
+[0.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/underwater_sensor_msgs': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_sensor_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/underwater_sensor_msgs
+[0.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/uwsim_osgocean': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/animated/Projects/Sailbot/install/wind_sensor:/home/animated/Projects/Sailbot/install/simulation:/home/animated/Projects/Sailbot/install/rc:/home/animated/Projects/Sailbot/install/ntrip_client:/home/animated/Projects/Sailbot/install/nn:/home/animated/Projects/Sailbot/install/mcu:/home/animated/Projects/Sailbot/install/gps:/home/animated/Projects/Sailbot/install/compass:/home/animated/Projects/Sailbot/install/autopilot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgocean -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/uwsim_osgocean
+[0.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/underwater_vehicle_dynamics': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/underwater_simulation/underwater_vehicle_dynamics -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/underwater_vehicle_dynamics
+[0.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_base_ctrl': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_base_ctrl -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_base_ctrl
+[0.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_metrics': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_metrics -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_metrics
+[0.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_navigation': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_navigation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_navigation
+[0.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_sim': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_sim -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_sim
+[0.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_sim_rviz': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_sim_rviz -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_sim_rviz
+[0.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_tf': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_tf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_tf
+[3.208s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[3.208s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[3.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/animated/Projects/SailbotSimulation/build/usv_metrics' returned '-2': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_metrics -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_metrics
+[3.299s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[3.299s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.299s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.299s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.307s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.307s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.307s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.309s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[3.309s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.310s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/animated/Projects/SailbotSimulation/install/local_setup.ps1'
+[3.310s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/animated/Projects/SailbotSimulation/install/_local_setup_util_ps1.py'
+[3.311s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/animated/Projects/SailbotSimulation/install/setup.ps1'
+[3.312s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/animated/Projects/SailbotSimulation/install/local_setup.sh'
+[3.313s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/animated/Projects/SailbotSimulation/install/_local_setup_util_sh.py'
+[3.313s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/animated/Projects/SailbotSimulation/install/setup.sh'
+[3.314s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/animated/Projects/SailbotSimulation/install/local_setup.bash'
+[3.314s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/animated/Projects/SailbotSimulation/install/setup.bash'
+[3.315s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/animated/Projects/SailbotSimulation/install/local_setup.zsh'
+[3.315s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/animated/Projects/SailbotSimulation/install/setup.zsh'

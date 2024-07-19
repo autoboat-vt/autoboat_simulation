@@ -1,0 +1,1 @@
+/usr/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_51508.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_51508

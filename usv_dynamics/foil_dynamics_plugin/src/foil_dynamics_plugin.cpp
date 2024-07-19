@@ -471,6 +471,7 @@ Foil_Dynamics_Plugin::OnUpdateSail ()
 	//std::cerr<<"\n forceSail["<<force.GetLength()<<"]: "<<force;
 	// apply forces at cg (with torques for position shift)
 	this->link->AddForceAtRelativePosition (force, this->cp);
+	
 //std::cerr<<"\n force: "<<force;
 //std::cerr<<"\n aw:"<<aw.GetLength ()<<", position: "<<this->cp;
 //std::cerr<<"\n aw:"<<aw.GetLength ()<<" force: "<<force.GetLength();

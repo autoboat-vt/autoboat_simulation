@@ -1,0 +1,1 @@
+Invoking command in '/home/animated/Projects/SailbotSimulation/build/wind_current': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_env_disturb/wind_current -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/wind_current

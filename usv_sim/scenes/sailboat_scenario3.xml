@@ -14,14 +14,14 @@
     <choppyFactor> -2.5 </choppyFactor>
     <crestFoamHeight> 2.2 </crestFoamHeight>
     <oceanSurfaceHeight> 1 </oceanSurfaceHeight>
-    <fog>
+    <!-- <fog>
       <density> 0.1 </density>
       <color>
         <r>0.017</r>
         <g>0.027</g>
         <b>0.079</b>
       </color>
-    </fog>
+    </fog> -->
     <color>
         <r>0.55</r>
         <g>0.45</g>

@@ -1,0 +1,67 @@
+[0.043s] Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_metrics': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_metrics -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_metrics
+[0.160s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.160s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.160s]   CMake.
+[0.160s] 
+[0.160s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.160s]   CMake that the project does not need compatibility with older versions.
+[0.160s] 
+[0.160s] [0m
+[0.377s] -- The C compiler identification is GNU 11.4.0
+[1.137s] -- The CXX compiler identification is GNU 11.4.0
+[2.223s] -- Detecting C compiler ABI info
+[2.495s] -- Detecting C compiler ABI info - done
+[2.516s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.516s] -- Detecting C compile features
+[2.517s] -- Detecting C compile features - done
+[2.523s] -- Detecting CXX compiler ABI info
+[2.782s] -- Detecting CXX compiler ABI info - done
+[2.808s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.809s] -- Detecting CXX compile features
+[2.810s] -- Detecting CXX compile features - done
+[2.871s] Traceback (most recent call last):
+[2.871s]   File "/home/animated/miniforge3/bin/cmake", line 8, in <module>
+[2.876s]     sys.exit(cmake())
+[2.876s]   File "/home/animated/miniforge3/lib/python3.10/site-packages/cmake/__init__.py", line 51, in cmake
+[2.876s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[2.876s]   File "/home/animated/miniforge3/lib/python3.10/site-packages/cmake/__init__.py", line 47, in _program
+[2.876s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name), *args], close_fds=False)
+[2.876s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 347, in call
+[2.876s]     return p.wait(timeout=timeout)
+[2.877s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1209, in wait
+[2.877s]     return self._wait(timeout=timeout)
+[2.877s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1959, in _wait
+[2.877s]     (pid, sts) = self._try_wait(0)
+[2.878s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1917, in _try_wait
+[2.878s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[2.878s] KeyboardInterrupt
+[2.913s] Invoked command in '/home/animated/Projects/SailbotSimulation/build/usv_metrics' returned '-2': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_metrics -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_metrics
+[2.924s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/catkin/build.py", line 74, in build
+    rc = await extension.build(
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 87, in build
+    rc = await self._reconfigure(args, env)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 182, in _reconfigure
+    buildfile = get_buildfile(cmake_cache)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 114, in get_buildfile
+    if 'Visual Studio' in generator:
+TypeError: argument of type 'NoneType' is not iterable

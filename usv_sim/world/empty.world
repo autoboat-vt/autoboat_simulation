@@ -27,7 +27,7 @@
 
   <physics name='default_physics' default='0' type='PHYSICS_TYPE'>
     <!-- <max_step_size>MAX_STEP_SIZE</max_step_size> -->
-    <max_step_size>0.005</max_step_size>
+    <max_step_size>0.008</max_step_size>
     <real_time_update_rate>100000</real_time_update_rate>
   </physics>
 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_f87fc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f87fc

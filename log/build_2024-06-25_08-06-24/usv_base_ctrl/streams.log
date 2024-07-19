@@ -1,0 +1,37 @@
+[0.043s] Invoking command in '/home/animated/Projects/SailbotSimulation/build/usv_base_ctrl': CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/usv_base_ctrl -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/usv_base_ctrl
+[0.160s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.160s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.160s]   CMake.
+[0.160s] 
+[0.161s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.161s]   CMake that the project does not need compatibility with older versions.
+[0.161s] 
+[0.161s] [0m
+[0.387s] -- The C compiler identification is GNU 11.4.0
+[1.309s] -- The CXX compiler identification is GNU 11.4.0
+[2.209s] -- Detecting C compiler ABI info
+[2.439s] -- Detecting C compiler ABI info - done
+[2.462s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.462s] -- Detecting C compile features
+[2.464s] -- Detecting C compile features - done
+[2.470s] -- Detecting CXX compiler ABI info
+[2.724s] -- Detecting CXX compiler ABI info - done
+[2.753s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.754s] -- Detecting CXX compile features
+[2.755s] -- Detecting CXX compile features - done
+[2.872s] Traceback (most recent call last):
+[2.872s]   File "/home/animated/miniforge3/bin/cmake", line 8, in <module>
+[2.874s]     sys.exit(cmake())
+[2.874s]   File "/home/animated/miniforge3/lib/python3.10/site-packages/cmake/__init__.py", line 51, in cmake
+[2.874s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[2.874s]   File "/home/animated/miniforge3/lib/python3.10/site-packages/cmake/__init__.py", line 47, in _program
+[2.874s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name), *args], close_fds=False)
+[2.874s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 347, in call
+[2.876s]     return p.wait(timeout=timeout)
+[2.876s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1209, in wait
+[2.876s]     return self._wait(timeout=timeout)
+[2.876s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1959, in _wait
+[2.877s]     (pid, sts) = self._try_wait(0)
+[2.877s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1917, in _try_wait
+[2.877s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[2.877s] KeyboardInterrupt

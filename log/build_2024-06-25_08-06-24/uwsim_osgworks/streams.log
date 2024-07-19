@@ -1,0 +1,37 @@
+[0.047s] Invoking command in '/home/animated/Projects/SailbotSimulation/build/uwsim_osgworks': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/animated/Projects/Sailbot/install/wind_sensor:/home/animated/Projects/Sailbot/install/simulation:/home/animated/Projects/Sailbot/install/rc:/home/animated/Projects/Sailbot/install/ntrip_client:/home/animated/Projects/Sailbot/install/nn:/home/animated/Projects/Sailbot/install/mcu:/home/animated/Projects/Sailbot/install/gps:/home/animated/Projects/Sailbot/install/compass:/home/animated/Projects/Sailbot/install/autopilot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/animated/miniforge3/bin/cmake /home/animated/Projects/SailbotSimulation/uwsim_resources/uwsim_osgworks -DCMAKE_INSTALL_PREFIX=/home/animated/Projects/SailbotSimulation/install/uwsim_osgworks
+[0.172s] [0mCMake Deprecation Warning at CMakeLists.txt:3 (CMAKE_MINIMUM_REQUIRED):
+[0.172s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.172s]   CMake.
+[0.172s] 
+[0.172s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.172s]   CMake that the project does not need compatibility with older versions.
+[0.172s] 
+[0.172s] [0m
+[0.404s] -- The C compiler identification is GNU 11.4.0
+[1.173s] -- The CXX compiler identification is GNU 11.4.0
+[2.312s] -- Detecting C compiler ABI info
+[2.533s] -- Detecting C compiler ABI info - done
+[2.548s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.548s] -- Detecting C compile features
+[2.549s] -- Detecting C compile features - done
+[2.555s] -- Detecting CXX compiler ABI info
+[2.820s] -- Detecting CXX compiler ABI info - done
+[2.846s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.846s] -- Detecting CXX compile features
+[2.847s] -- Detecting CXX compile features - done
+[2.906s] Traceback (most recent call last):
+[2.906s]   File "/home/animated/miniforge3/bin/cmake", line 8, in <module>
+[2.906s]     sys.exit(cmake())
+[2.906s]   File "/home/animated/miniforge3/lib/python3.10/site-packages/cmake/__init__.py", line 51, in cmake
+[2.906s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[2.906s]   File "/home/animated/miniforge3/lib/python3.10/site-packages/cmake/__init__.py", line 47, in _program
+[2.906s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name), *args], close_fds=False)
+[2.907s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 347, in call
+[2.907s]     return p.wait(timeout=timeout)
+[2.907s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1209, in wait
+[2.907s]     return self._wait(timeout=timeout)
+[2.907s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1959, in _wait
+[2.907s]     (pid, sts) = self._try_wait(0)
+[2.907s]   File "/home/animated/miniforge3/lib/python3.10/subprocess.py", line 1917, in _try_wait
+[2.907s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[2.907s] KeyboardInterrupt

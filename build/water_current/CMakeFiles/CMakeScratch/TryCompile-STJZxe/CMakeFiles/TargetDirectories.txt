@@ -1,0 +1,3 @@
+/home/animated/Projects/SailbotSimulation/build/water_current/CMakeFiles/CMakeScratch/TryCompile-STJZxe/CMakeFiles/cmTC_60054.dir
+/home/animated/Projects/SailbotSimulation/build/water_current/CMakeFiles/CMakeScratch/TryCompile-STJZxe/CMakeFiles/edit_cache.dir
+/home/animated/Projects/SailbotSimulation/build/water_current/CMakeFiles/CMakeScratch/TryCompile-STJZxe/CMakeFiles/rebuild_cache.dir
