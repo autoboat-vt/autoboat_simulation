@@ -103,6 +103,19 @@ RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
     && echo "service ssh start" >> ~/.bashrc \
     && echo "source /root/catkin_ws/install_isolated/setup.bash" >> ~/.bashrc
 
-CMD source /opt/ros/kinetic/setup.bash \
-&& source /root/catkin_ws/install_isolated/setup.bash \
-&& service ssh start && roslaunch usv_sim sailboat_scenario3.launch parse:=false & mate-session
+# CMD source /opt/ros/kinetic/setup.bash \
+# && source /root/catkin_ws/install_isolated/setup.bash \
+# && service ssh start && roslaunch usv_sim sailboat_scenario3.launch parse:=false & mate-session
+
+
+# CMD source /opt/ros/kinetic/setup.bash && source /root/catkin_ws/install_isolated/setup.bash && service ssh start && (while true; do mate-session; echo 'mate-session crashed, retrying...'; sleep 0.5; done) & roslaunch usv_sim sailboat_scenario3.launch parse:=false
+
+# CMD ["bash", "-c", "source /opt/ros/kinetic/setup.bash && \
+#     source /root/catkin_ws/install_isolated/setup.bash && \
+#     service ssh start && \
+#     (while true; do mate-session; echo 'mate-session crashed, retrying...'; sleep 0.5; done) & \
+#     roslaunch usv_sim sailboat_scenario3.launch parse:=false"]
+
+
+RUN chmod +x /root/catkin_ws/src/usv_sim_lsa/docker_startup_script_mate_session.sh
+CMD ["/root/catkin_ws/src/usv_sim_lsa/docker_startup_script_mate_session.sh"]
