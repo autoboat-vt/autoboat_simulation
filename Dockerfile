@@ -106,6 +106,5 @@ RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
 CMD source /opt/ros/kinetic/setup.bash \
     && source /root/catkin_ws/install_isolated/setup.bash \
     && service ssh start \
-    && roslaunch usv_sim sailboat_scenario3.launch parse:=false 
-    #\
-    #& mate-session
+    && roslaunch usv_sim sailboat_scenario3.launch parse:=false \
+    && mate-session
