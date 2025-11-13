@@ -103,12 +103,16 @@ RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
     && echo "service ssh start" >> ~/.bashrc \
     && echo "source /root/catkin_ws/install_isolated/setup.bash" >> ~/.bashrc
 
+
+# MAKE GAZEBO HEADLESS (DON'T RENDER ANYTHING)
+ENV QT_QPA_PLATFORM=offscreen
+ENV LIBGL_ALWAYS_SOFTWARE=1
+ENV MESA_LOADER_DRIVER_OVERRIDE=swrast
+ENV DISPLAY=""
+
+
 CMD source /opt/ros/kinetic/setup.bash \
     && source /root/catkin_ws/install_isolated/setup.bash \
     && service ssh start \
-<<<<<<< HEAD
-    && roslaunch usv_sim sailboat_scenario3.launch parse:=false \
-    && mate-session
-=======
+    # && mate-session \
     && roslaunch usv_sim sailboat_scenario3.launch parse:=false
->>>>>>> 55f4f0d6700580882711fcf36c3fd222ce5def59
